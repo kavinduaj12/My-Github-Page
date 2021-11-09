@@ -221,6 +221,9 @@ body, html {
   <h2>Footer</h2>
 </div>
 
+{% if site.telegram_site_id %}
+    {% include telegram.html %}
+{% endif %}
 
 </body>
 </html>
