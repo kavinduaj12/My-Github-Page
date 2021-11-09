@@ -60,6 +60,7 @@ body, html {
 }  
 /*----------------------------------------------------------/*
 
+  
 
 /* Style the top navigation bar */
 .navbar {
@@ -77,6 +78,18 @@ body, html {
   text-decoration: none;
 }
 
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}  
+  
 /* Right-aligned link */
 .navbar a.right {
   float: right;
@@ -153,6 +166,10 @@ body, html {
   <a href="#" class="right">Link</a>
 </div>
 
+<h2>Dark Mode/Light Mode</h2>
+<button onclick="myFunction()">Toggle dark mode</button>
+ 
+  
   <div class="main">
     <h2>TITLE HEADING</h2>
     <h5>Title description, Dec 7, 2017</h5>
@@ -172,5 +189,11 @@ body, html {
   <h2>Footer</h2>
 </div>
 
+  <script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script> 
 </body>
 </html>
